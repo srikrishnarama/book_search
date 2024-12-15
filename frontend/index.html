@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Management App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Book Management System</h1>
+
+  <div id="book-form">
+    <h2>Add New Book</h2>
+    <form id="add-book-form">
+      <label>Title:</label>
+      <input type="text" id="title" required>
+      
+      <label>Author ID:</label>
+      <input type="number" id="authorID" required>
+      
+      <label>Genre ID:</label>
+      <input type="number" id="genreID" required>
+      
+      <label>Pages:</label>
+      <input type="number" id="pages" required>
+      
+      <label>Published Date:</label>
+      <input type="date" id="publishedDate" required>
+      
+      <button type="submit">Add Book</button>
+    </form>
+  </div>
+
+  <h2>Book List</h2>
+  <ul id="book-list"></ul>
+
+  <script src="app.js"></script>
+</body>
+</html>
